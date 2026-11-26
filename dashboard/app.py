@@ -559,7 +559,7 @@ if page == "Project Findings":
 
 Tuned Random Forest achieved:
 - MAE: $17,447.31
-- RMSE: ₹28,909.14
+- RMSE: $28,909.14
 - R² Score: 0.891"""
         )
 
