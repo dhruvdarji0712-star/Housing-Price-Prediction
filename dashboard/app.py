@@ -199,8 +199,8 @@ if page == "Home":
     col1, col2, col3, col4 = st.columns(4)
     
     col1.metric("R² Score", "89.10%")
-    col2.metric("MAE", "₹17,447")
-    col3.metric("RMSE", "₹28,909")
+    col2.metric("MAE", "$17,447")
+    col3.metric("RMSE", "$28,909")
     col4.metric("Test Houses", "292")
     
     st.divider()
@@ -440,7 +440,7 @@ if page == "House Price Prediction":
         predicted_price = loaded_model.predict(input_house)[0]
     
         st.success(
-            f"Predicted House Price: ₹{predicted_price:,.2f}"
+            f"Predicted House Price: ${predicted_price:,.2f}"
         )
     
         st.caption(
@@ -558,7 +558,7 @@ if page == "Project Findings":
             """**Best Overall Model**
 
 Tuned Random Forest achieved:
-- MAE: ₹17,447.31
+- MAE: $17,447.31
 - RMSE: ₹28,909.14
 - R² Score: 0.891"""
         )
@@ -584,4 +584,3 @@ Tuned Random Forest achieved:
     st.caption(
         "Housing Price Prediction | Machine Learning Portfolio Project"
     )
-
